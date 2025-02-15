@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/netflix-background-.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+            filter: blur(5px);
+        }
+
+        .header {
+            position: absolute;
+            width: 100%;
+            padding: 20px 50px;
+            top: 0;
+            left: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;  
+            align-items: center;
+            width: 100%;
+        }
+
+        .img {
+            height: 50px;
+            width: auto;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            gap: 15px; 
+        }
+
+        button {
+            background: red;
+            color: white;
+            padding: 7px 12px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            background: transparent;
+            border: 1px solid white;
+            padding: 7px 12px;
+            color: white;
+        }
+
+    
+        .email {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .email input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 10px;
+            
+        }
+
+        .email button {
+            background: red;
+            border: none;
+            color: white;
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+        button:hover{
+            background-color: rgb(246, 73, 73);
+        }
+        .header:hover{
+            background-color: rgb(246, 73, 73);
+        }
+
+
+      
+        .content {
+            position: relative;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 60px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="header">
+        <nav>
+            <img src="assets/Netflix-logo.png" class="img">
+            <div class="button">
+                <button class="btn">English <img src="assets/down-icon.png"> </button>
+                <button>Sign In</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>Unlimited movies, TV </h1>
+        <h1>shows, and more.</h1>
+        <p>Starts at ₹149. Cancel anytime.</p><br>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+        <form class="email">
+            <input type="email" placeholder="Enter your Email"><br><br>
+            <button type="submit">Get Started</button>
+        </form>
+    </div>
+</body>
+</html>
